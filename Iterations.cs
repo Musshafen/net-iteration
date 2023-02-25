@@ -61,7 +61,9 @@ namespace DotnetIteration
         // 
         public static IEnumerable<string> StringyIndexes(List<string> words)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            return words.Select((word, index) => word + $" is at index {index}");
         }
 
 
@@ -71,7 +73,11 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> OnlyTheEvenSurvive(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            return numbers.Where(number => number % 2 == 0);
+
+
         }
 
 
@@ -82,6 +88,9 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> OnlyTheEvenIndexedSurvive(List<int> numbers)
         {
+
+            //return numbers.Where((number, index) => index % 2 = 0);
+
             throw new System.NotImplementedException();
         }
 
@@ -101,6 +110,9 @@ namespace DotnetIteration
         // 
         public static IEnumerable<string> BestMovieOfTheYear(List<Movie> movies, int yearToMatch)
         {
+
+            //return movies.Where(movie => movie.Year == yearToMatch && movie.Score > 90);
+
             throw new System.NotImplementedException();
 
 

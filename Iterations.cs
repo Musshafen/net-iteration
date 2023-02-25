@@ -31,8 +31,13 @@ namespace DotnetIteration
         //    the words forced to uppercase.
         //
         public static IEnumerable<string> Yelling(List<string> words)
+
         {
-            throw new System.NotImplementedException();
+            // throw new System.NotImplementedException();
+
+            // var newWords = words.Select(word => word.ToUpper());
+
+            return words.Select(word => word.ToUpper());
         }
 
 
@@ -43,7 +48,8 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> Double(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //  throw new System.NotImplementedException();
+            return numbers.Select(number => number * 2);
         }
 
 
@@ -87,7 +93,7 @@ namespace DotnetIteration
         // 
         // A movie object looks like this:
         // 
-        // new Movie() {
+        // new Movie() 
         //   Name: "Get Out",
         //   Year: "2017",
         //   Score: 99
@@ -96,6 +102,8 @@ namespace DotnetIteration
         public static IEnumerable<string> BestMovieOfTheYear(List<Movie> movies, int yearToMatch)
         {
             throw new System.NotImplementedException();
+
+
         }
 
 

@@ -89,9 +89,9 @@ namespace DotnetIteration
         public static IEnumerable<int> OnlyTheEvenIndexedSurvive(List<int> numbers)
         {
 
-            //return numbers.Where((number, index) => index % 2 = 0);
+            return numbers.Where((number, index) => index % 2 == 0);
 
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
 
 

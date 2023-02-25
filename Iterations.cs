@@ -138,7 +138,9 @@ namespace DotnetIteration
         // 
         public static string FindTheNeedle(List<string> sentences)
         {
-            throw new System.NotImplementedException();
+            return sentences.First(sentence => sentence.Contains("needle"));
+
+            //throw new System.NotImplementedException();
         }
 
 

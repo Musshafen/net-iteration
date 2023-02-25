@@ -111,9 +111,9 @@ namespace DotnetIteration
         public static IEnumerable<string> BestMovieOfTheYear(List<Movie> movies, int yearToMatch)
         {
 
-            //return movies.Where(movie => movie.Year == yearToMatch && movie.Score > 90);
+            return movies.Where(movie => movie.Year == yearToMatch && movie.Score > 90).Select(movie => movie.Name);
 
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
 
 
         }

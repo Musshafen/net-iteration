@@ -155,7 +155,7 @@ namespace DotnetIteration
 
 
             //throw new System.NotImplementedException();
-            //return words.Select((word, index) => word + $" is at index {index}");
+
         }
 
 
@@ -166,7 +166,10 @@ namespace DotnetIteration
         // 
         public static bool SomeoneToLove(List<string> words)
         {
-            throw new System.NotImplementedException();
+            var love = words.Any(word => word.Length == 4);
+            return love;
+
+            //throw new System.NotImplementedException();
         }
     }
 }
